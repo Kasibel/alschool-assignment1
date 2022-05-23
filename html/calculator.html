@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div><div><a href="./calculator.html">Calculator</a></div></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./sign_in.html">Sign In</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <div class="table">
+        <h1 class="calculator">Calculator With HTML Table</h1>
+        <div class="container">
+        <div class="header">Calculator</div>
+          <input type="text" class="result">
+          <table>
+            <tr>
+              <td><input type="button" value="&radic;" class="global first-row"></td>
+              <td><input type="button"  value="(" class="global first-row"></td>
+              <td><input type="button" value=")" class="global first-row"></td>
+              <td><input type="button" value="%" class="global first-row"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="7" class="global"></td>
+              <td><input type="button" value="8" class="global"></td>
+              <td><input type="button" value="9" class="global"></td>
+              <td><input type="button" value="/" class="global"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="4" class="global"></td>
+              <td><input type="button" value="5" class="global"></td>
+              <td><input type="button" value="6" class="global"></td>
+              <td><input type="button" value="X" class="global"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" class="global"></td>
+              <td><input type="button" value="2" class="global"></td>
+              <td><input type="button" value="3" class="global"></td>
+              <td><input type="button" value="-" class="global"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="button" value="0" class="global grey"></td>
+              <td><input type="button" value="." class="global"></td>
+              <td rowspan="2"><input type="button" value="+" class="global plus"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="Del" class="global red white-text"></td>
+              <td colspan="2"><input type="button" value="=" class="global green white-text"></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <h1 class="calculator">Calculator With Flex</h1>
+    <div class="container">
+        <div class="header">Calculator</div>
+          <input type="text" class="result">
+            <div class="row">
+              <input type="button" value="&radic;" class="global first-row">
+              <input type="button"  value="(" class="global first-row">
+              <input type="button" value=")" class="global first-row">
+              <input type="button" value="%" class="global first-row">
+            </div>
+            <div class="row">
+              <input type="button" value="7" class="global">
+              <input type="button" value="8" class="global">
+              <input type="button" value="9" class="global">
+              <input type="button" value="/" class="global">
+            </div>
+            <div class="row">
+              <input type="button" value="4" class="global">
+              <input type="button" value="5" class="global">
+              <input type="button" value="6" class="global">
+              <input type="button" value="X" class="global">
+            </div>
+            <div class="row">
+              <input type="button" value="1" class="global">
+              <input type="button" value="2" class="global">
+              <input type="button" value="3" class="global">
+              <input type="button" value="-" class="global">
+            </div>
+            <div class="plus-container">
+                <div class="combined-container">
+                    <div class="row row-3">
+                        <input type="button" value="0" class="global grey">
+                        <input type="button" value="." class="global dot">
+                    </div>
+                    <div class="row row-4">
+                        <input type="button" value="Del" class="global red white-text">
+                        <input type="button" value="=" class="global green white-text equals">
+                    </div>
+                </div>
+                <input type="button" value="+" class="global">
+            </div>
+        </div>
+</body>
+</html>
