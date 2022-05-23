@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     background-color: #F0FFFF;
-    font-family: font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     margin: 0;
 }
 header {
@@ -17,9 +17,9 @@ header {
     background-color: #48D1CC;
 }
 header div {
-    font-family: font-family: 'Raleway', sans-serif;
-    font-size: 45px;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a {
     text-decoration: none;
@@ -30,23 +30,93 @@ nav ul {
     justify-content: flex-start;
     gap: 50px;
 }
-main {
-    margin: 100px 20px;
-}
+
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-container {
+
+main {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    margin: 80px 20px;  
 }
-.main-container img {
-    border: 2px solid black;
+
+main img {
+    border: 15px solid #48D1CC;;
     border-radius: 50px;
     margin-right: 50px;
 }
+
+.section-container {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+}
+section {
+    border: 2px solid gray;
+}
+
+.form-container {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    column-gap: 200px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input.field {
+    margin-right: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    border: 2px solid #48D1CC;
+}
+
+select {
+    border: 2px solid #48D1CC;
+}
+
+.text-container {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.sign-container .field {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+button {
+    height: 45px;
+    width: 200px;
+    background-color: #48D1CC;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 5px 5px;
+    border: #48D1CC;
+    border-radius: 15px;
+}
+button.sign-in {
+    margin-bottom: 200px;
+}
+
+textarea {
+    border: 2px solid #48D1CC;
+    margin-top: 10px;
+}
+
 footer {
     padding: 20px;
     display: flex;
@@ -55,3 +125,106 @@ footer {
     font-size: 18px;
     background-color: #48D1CC;
 }
+
+h1.calculator{
+    text-align: center;
+  }
+  .container{
+    margin: auto;
+    width: 17%;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+       -moz-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+            box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    background-color: #F8F8F8;
+  }
+  .header{
+    background-color: #48D1CC;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  table{
+    width: 100%;
+  }
+  td{
+    width: 25%;
+  }
+  .result{
+    font-size: 24px;
+    padding: 16px 5px;
+    font-weight: 700;
+    text-align: right;
+    width: 96%;
+    border: none;
+    background-color: #F8F8F8;
+  }
+   .global{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+  /*the global class padding reset for first-row class button*/
+  .first-row{
+   padding: 7px;
+  }
+  .plus{
+    height: 105px;
+  }
+  .green{
+    background-color: #48D1CC;
+  }
+  .red{
+    background-color: #F50258
+  }
+  .grey{
+    background-color: #F2F2F2;
+  }
+  .white-text{
+    color: #fff;
+  }
+
+  div.row {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 4px;
+  }
+  .plus-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+  }
+
+  .combined-container {
+      width: 75%;
+  }
+  .plus-container .global {
+      width: 25%;
+  }
+  .row-3,
+  .row-4 {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+  }
+  .row-3 .grey {
+      flex-grow: 7;
+  }
+  .row-3 .dot {
+      flex-grow: 1;
+  }
+  .row-4 .red {
+    flex-grow: 1;
+}
+.row-4 .equals {
+    flex-grow: 7;
+}
+.table {
+    margin-bottom: 80px;
+}
+  
