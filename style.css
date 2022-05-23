@@ -49,13 +49,23 @@ main img {
     margin-right: 50px;
 }
 
+.main-container {
+    align-self: center;
+
+}
+
 .section-container {
     display: flex;
     flex-flow: wrap;
     gap: 20px;
 }
-section {
-    border: 2px solid gray;
+
+.about {
+    margin-bottom: 50px;
+}
+
+.list li {
+    margin-bottom: 15px;
 }
 
 .form-container {
