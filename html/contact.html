@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,48 @@
 </head>
 <body>
     <header>
-        <div>Logo</div>
+        <div><div><a href="./calculator.html">Calculator</a></div></div>
         <nav>
             <ul>
-                <li><a href="./about_me.html">About Me</a></li>
-                <li><a href="./html/contact.html">Contact</a></li>
-                <li><a href="./html/register.html">Register</a></li>
-                <li><a href="./html/sign_in.html">Sign In</a></li>                
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./sign_in.html">Sign In</a></li>                
             </ul>
         </nav>
     </header>
     <main>
-        
+        <div class="form-container">
+            <form action="#">
+                <div class="text-container">Contact Us</div>
+                <div>
+                    <input class="field" type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div> 
+                <div>
+                    <input class="field" type="email" id="email" name="email" placeholder="Email" required>            
+                    <input class="field" type="tel" id="phone" name="phone" placeholder="Phone No" required>
+                </div>
+                <div>
+                    <select name="reason" id="reason">
+                        <option value="complaint">Complaint</option>
+                        <option value="enquiry">Enquiry</option>
+                        <option value="suggestion">Suggestion</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="textarea" id="textarea" cols="80" rows="10" placeholder="Type your message here" required></textarea>
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
     </main>
 
     <footer>
-        Belinda Aliu, 2022.
+        Copyright &copy; Belinda Aliu, 2022.
     </footer>
 </body>
 </html>
